@@ -44,9 +44,9 @@ plt.xlabel('Number of epochs')
 plt.ylabel('Error')
 plt.title('Training error progress')
 
-# Plot the output 
+# Plot the output
 x_dense = np.linspace(min_val, max_val, num_points * 2)
-y_dense_pred = nn.sim(x_dense.reshape(x_dense.size,1)).reshape(x_dense.size)
+y_dense_pred = nn.sim(x_dense.reshape(x_dense.size, 1)).reshape(x_dense.size)
 
 plt.figure()
 plt.plot(x_dense, y_dense_pred, '-', x, y, '.', x, y_pred, 'p')
